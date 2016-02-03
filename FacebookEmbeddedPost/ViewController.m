@@ -79,7 +79,7 @@
 
     // Third Approach:  load html file from web server. Same html file we are hosting insdie webserver.
     // Webserver path in Mac: /Library/WebServer/Documents
-    NSURL *facebookWebServerUrl = [NSURL URLWithString:@"http://10.65.77.160/FacebookPost.html"];  // IP Address of my mac to load the file in my mobile.
+    NSURL *facebookWebServerUrl = [NSURL URLWithString:@"http://127.0.0.1/FacebookPost.html"];  // IP Address of my mac to load the file in my mobile.
 
 //    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:facebookFileUrl];             // Second Approach     [Not Working]
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:facebookWebServerUrl];          // Third Approach      [Working]
